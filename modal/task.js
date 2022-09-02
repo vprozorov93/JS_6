@@ -15,9 +15,9 @@ buttonSuccess.onclick = () => {
     modalSuccess.className = "modal"
 }
 
-const modal_close = Array.from(document.querySelectorAll('.modal__close_times'))
-modal_close.forEach((element) => {
+const modalClose = Array.from(document.querySelectorAll('.modal__close_times'))
+modalClose.forEach((element) => {
     element.onclick = () => {
-        element.parentElement.className = "modal"
+        element.closest('.modal').className = "modal"
     }
 })
